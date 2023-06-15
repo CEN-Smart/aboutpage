@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Box as='header' className={classNames(`header-box-shadow transition duration-500 border-b`, { ' border-b-[#B8BBF5]': colorMode === 'light', ' border-b-[#0D99FF]': colorMode === 'dark' }, {
+      <Box as='header' className={classNames(`header-box-shadow border-b`, { ' border-b-[#B8BBF5]': colorMode === 'light', ' border-b-[#0D99FF]': colorMode === 'dark' }, {
         ' text-[#8689BD]': colorMode === 'light', 'text-[#E8E9EF]': colorMode === 'dark'
       }, { ' bg-[#E6E8F8]': colorMode === 'light', 'bg-[#262A82]': colorMode === 'dark' })}>
         <Box className={`component-container py-4 `}>
