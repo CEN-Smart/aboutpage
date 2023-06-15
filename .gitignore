@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.prettierrc
 
 # testing
 /coverage
@@ -18,6 +19,9 @@
 # misc
 .DS_Store
 *.pem
+.turbo
+/.vscode/
+/.next/
 
 # debug
 npm-debug.log*
