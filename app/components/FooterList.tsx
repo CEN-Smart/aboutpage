@@ -1,4 +1,5 @@
 import { Box, Flex, Heading } from '@chakra-ui/react'
+import classNames from 'classnames'
 import Link from 'next/link'
 interface FooterListProps {
   title: string
@@ -17,10 +18,10 @@ const FooterList = ({ title, link1, link2, link3, link4, linkTitle1, linkTitle2,
     <Box>
       <Heading as="h6" size="md" mb="1rem">{title}</Heading>
       <Flex direction="column" gap='1rem'>
-        <Link href={link1}>{linkTitle1}</Link>
-        <Link href={link2}>{linkTitle2}</Link>
-        <Link href={link3}>{linkTitle3}</Link>
-        {link4 && <Link href={link4}>{linkTitle4}</Link>}
+        <Link className={classNames(`transition-all duration-300 hover:border-b hover:border-b-blue-700 w-fit`)} href={link1}>{linkTitle1}</Link>
+        <Link className={classNames(`transition-all duration-300 hover:border-b hover:border-b-blue-700 w-fit`)} href={link2}>{linkTitle2}</Link>
+        <Link className={classNames(`transition-all duration-300 hover:border-b hover:border-b-blue-700 w-fit`)} href={link3}>{linkTitle3}</Link>
+        {link4 && <Link className={classNames(`transition-all duration-300 hover:border-b hover:border-b-blue-700 w-fit`)} href={link4}>{linkTitle4}</Link>}
       </Flex>
 
     </Box>
