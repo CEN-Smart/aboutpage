@@ -1,6 +1,6 @@
 'use client'
 import { Box, useColorModeValue } from '@chakra-ui/react'
-import svgImgBg from '/public/svg-bg.svg'
+import svgImgBg from '@/public/svg-bg.svg'
 import classNames from 'classnames';
 import Image from 'next/image'
 import { ReactNode } from 'react';
